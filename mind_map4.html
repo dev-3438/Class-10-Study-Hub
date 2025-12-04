@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Map - Life Processes</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .mind-map-container {
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+            border: 2px solid #cbd5e1;
+        }
+        .main-branch {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            color: white;
+        }
+        .sub-branch {
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+        }
+        .leaf-node {
+            background: white;
+            border: 2px solid #6366f1;
+            color: #1f2937;
+        }
+        .connector {
+            border-left: 3px solid #6366f1;
+            margin-left: 1rem;
+            padding-left: 1rem;
+        }
+        img.central-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #3b82f6;
+            margin-bottom: 16px;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-100 min-h-screen p-6">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Mind Map</h1>
+            <p class="text-xl text-gray-600">Life Processes - Class 10 Science</p>
+            <div class="w-32 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Mind Map -->
+        <div class="mind-map-container rounded-2xl p-8 shadow-2xl text-center">
+            
+            <!-- Main Topic -->
+            <div class="mb-8">
+                <img src="https://i.ibb.co/7J8w8vF/life-processes.png" alt="Life Processes" class="central-image mx-auto">
+                <div class="main-branch rounded-xl p-6 inline-block shadow-lg">
+                    <div class="flex items-center justify-center">
+                        <i class="fas fa-heartbeat text-3xl mr-4"></i>
+                        <h2 class="text-2xl font-bold">Life Processes</h2>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main Branches -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 text-left">
+                
+                <!-- Nutrition Branch -->
+                <div class="space-y-4">
+                    <div class="sub-branch rounded-xl p-4 shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-carrot text-xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Nutrition</h3>
+                        </div>
+                    </div>
+                    <div class="connector space-y-3">
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Autotrophic:</strong> Photosynthesis (CO₂ + H₂O → Glucose + O₂)
+                        </div>
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Heterotrophic:</strong> Holozoic, Saprophytic, Parasitic
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Respiration Branch -->
+                <div class="space-y-4">
+                    <div class="sub-branch rounded-xl p-4 shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-lungs text-xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Respiration</h3>
+                        </div>
+                    </div>
+                    <div class="connector space-y-3">
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Aerobic:</strong> Glucose + O₂ → CO₂ + H₂O + ATP
+                        </div>
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Anaerobic:</strong> Glucose → Lactic acid / Ethanol + Less energy
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Transportation Branch -->
+                <div class="space-y-4">
+                    <div class="sub-branch rounded-xl p-4 shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-tint text-xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Transport</h3>
+                        </div>
+                    </div>
+                    <div class="connector space-y-3">
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Humans:</strong> Blood, Heart, Vessels
+                        </div>
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Plants:</strong> Xylem (Water), Phloem (Food)
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Excretion Branch -->
+                <div class="space-y-4">
+                    <div class="sub-branch rounded-xl p-4 shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-toilet-paper text-xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Excretion</h3>
+                        </div>
+                    </div>
+                    <div class="connector space-y-3">
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Humans:</strong> Kidney, Lungs, Skin
+                        </div>
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Plants:</strong> Stomata, Lenticels, Leaves
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Reproduction Branch -->
+                <div class="space-y-4">
+                    <div class="sub-branch rounded-xl p-4 shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-baby text-xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Reproduction</h3>
+                        </div>
+                    </div>
+                    <div class="connector space-y-3">
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Asexual:</strong> Binary fission, Budding, Fragmentation, Vegetative propagation
+                        </div>
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Sexual:</strong> Gametes fuse, Plants: Flower → Seed/Fruit, Humans: Sperm + Egg → Zygote
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Life Processes & Survival Branch -->
+                <div class="space-y-4">
+                    <div class="sub-branch rounded-xl p-4 shadow-lg">
+                        <div class="flex items-center">
+                            <i class="fas fa-leaf text-xl mr-3"></i>
+                            <h3 class="text-xl font-bold">Survival</h3>
+                        </div>
+                    </div>
+                    <div class="connector space-y-3">
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Homeostasis:</strong> Maintain internal balance
+                        </div>
+                        <div class="leaf-node rounded-lg p-3 shadow-md">
+                            <strong>Variation:</strong> Sexual reproduction → helps adaptation
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Study Tip -->
+            <div class="mt-8 text-center">
+                <div class="bg-white rounded-lg p-6 shadow-lg">
+                    <div class="flex items-center justify-center mb-3">
+                        <i class="fas fa-brain text-2xl text-purple-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Memory Tip</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Remember: <strong>"Nutrition, Respiration, Transport, Excretion, Reproduction"</strong> – main life processes!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultra Short Notes - Light Reflection and Refraction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .note-card { 
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: all 0.3s ease;
+        }
+        .note-card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+        .bullet-point { 
+            background: rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-50 to-blue-50 min-h-screen p-6">
+    <div class="max-w-4xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Ultra Short Notes</h1>
+            <p class="text-xl text-gray-600">Light - Reflection and Refraction</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-600 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Quick Revision Card -->
+        <div class="note-card rounded-2xl p-8 text-white shadow-2xl">
+            <div class="flex items-center mb-6">
+                <i class="fas fa-bolt text-3xl mr-4"></i>
+                <h2 class="text-2xl font-bold">Super Quick Revision</h2>
+            </div>
+            
+            <div class="space-y-4">
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">1. Light travels in straight lines</span>
+                    <p class="text-sm opacity-90 mt-1">Speed of light in vacuum = 3 × 10⁸ m/s</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">2. Reflection Laws</span>
+                    <p class="text-sm opacity-90 mt-1">∠i = ∠r and all rays lie in same plane</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">3. Mirror Formula</span>
+                    <p class="text-sm opacity-90 mt-1">1/f = 1/v + 1/u (f = focal length)</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">4. Magnification</span>
+                    <p class="text-sm opacity-90 mt-1">m = h'/h = -v/u (negative = inverted)</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">5. Refraction</span>
+                    <p class="text-sm opacity-90 mt-1">Light bends when changing medium (sin i/sin r = constant)</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">6. Refractive Index</span>
+                    <p class="text-sm opacity-90 mt-1">μ = c/v (higher μ = denser medium)</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">7. Lens Formula</span>
+                    <p class="text-sm opacity-90 mt-1">1/f = 1/v - 1/u (convex: +f, concave: -f)</p>
+                </div>
+                
+                <div class="bullet-point rounded-lg p-4">
+                    <span class="font-semibold text-lg">8. Power of Lens</span>
+                    <p class="text-sm opacity-90 mt-1">P = 1/f (in meters), unit = dioptre (D)</p>
+                </div>
+            </div>
+            
+            <div class="mt-8 text-center">
+                <p class="text-lg opacity-90">💡 Remember: Convex lenses converge, Concave lenses diverge!</p>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>

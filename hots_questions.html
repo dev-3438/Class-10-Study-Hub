@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTS Questions - Light Reflection and Refraction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .question-card { 
+            background: white;
+            border-left: 4px solid #8b5cf6;
+            transition: all 0.3s ease;
+        }
+        .question-card:hover { 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+            border-left-color: #7c3aed;
+        }
+        .answer-box {
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+            border: 2px solid #a855f7;
+        }
+        .hots-badge {
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+            color: white;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-50 to-indigo-100 min-h-screen p-6">
+    <div class="max-w-6xl mx-auto">
+        <!-- Header -->
+        <div class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-gray-800 mb-2">Higher Order Thinking Skills (HOTS)</h1>
+            <p class="text-xl text-gray-600">Advanced Questions - Light Reflection and Refraction</p>
+            <div class="w-32 h-1 bg-gradient-to-r from-purple-500 to-indigo-600 mx-auto mt-4"></div>
+        </div>
+
+        <!-- Questions -->
+        <div class="space-y-8">
+            
+            <!-- Question 1 -->
+            <div class="question-card rounded-xl p-6 shadow-lg">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-2xl text-purple-500 mr-3"></i>
+                        <h2 class="text-xl font-bold text-gray-800">Question 1: Critical Thinking</h2>
+                    </div>
+                    <div class="hots-badge rounded-full px-3 py-1 text-sm font-bold">Advanced</div>
+                </div>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-4">
+                    <p class="text-gray-800 font-medium">
+                        A student claims that if we use a convex lens of very large focal length, it will behave like a plane mirror. Do you agree? Justify your answer with proper reasoning and mathematical support.
+                    </p>
+                </div>
+                
+                <div class="answer-box rounded-lg p-4">
+                    <h3 class="font-bold text-purple-800 mb-3">Answer:</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <strong class="text-purple-700">Analysis:</strong>
+                            <p class="mt-2">Yes, I agree with this claim. As the focal length of a convex lens increases significantly, its behavior approaches that of a plane mirror.</p>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Mathematical Justification:</strong>
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                For a convex lens: 1/f = 1/v - 1/u<br><br>
+                                As f → ∞ (very large focal length):<br>
+                                1/∞ = 1/v - 1/u<br>
+                                0 = 1/v - 1/u<br>
+                                1/v = 1/u<br>
+                                Therefore: v = u<br><br>
+                                Magnification: m = v/u = u/u = +1
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Physical Interpretation:</strong>
+                            <ul class="list-disc ml-6 mt-2 space-y-1">
+                                <li>When f → ∞, the lens surface becomes almost flat</li>
+                                <li>Image distance equals object distance (v = u)</li>
+                                <li>Magnification = +1 (same size, erect image)</li>
+                                <li>These are exactly the properties of a plane mirror!</li>
+                                <li>The lens converges parallel rays at infinity, just like a plane mirror</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-green-100 rounded p-3">
+                            <strong class="text-green-800">Conclusion:</strong> A convex lens with infinite focal length behaves identically to a plane mirror in terms of image formation properties.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question-card rounded-xl p-6 shadow-lg">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-2xl text-purple-500 mr-3"></i>
+                        <h2 class="text-xl font-bold text-gray-800">Question 2: Problem Solving</h2>
+                    </div>
+                    <div class="hots-badge rounded-full px-3 py-1 text-sm font-bold">Advanced</div>
+                </div>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-4">
+                    <p class="text-gray-800 font-medium">
+                        A compound lens system consists of two lenses: a convex lens (f₁ = 20 cm) and a concave lens (f₂ = -30 cm) placed in contact. An object is placed 40 cm from this combination. Find the position and nature of the final image. Also, calculate the total power of this lens system.
+                    </p>
+                </div>
+                
+                <div class="answer-box rounded-lg p-4">
+                    <h3 class="font-bold text-purple-800 mb-3">Answer:</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <strong class="text-purple-700">Step 1: Calculate Total Power</strong>
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                P₁ = 1/f₁ = 1/0.20 = +5 D<br>
+                                P₂ = 1/f₂ = 1/(-0.30) = -3.33 D<br>
+                                P_total = P₁ + P₂ = 5 - 3.33 = +1.67 D
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Step 2: Find Equivalent Focal Length</strong>
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                f_eq = 1/P_total = 1/1.67 = 0.60 m = 60 cm<br>
+                                (Positive value indicates converging system)
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Step 3: Find Image Position</strong>
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                Given: u = -40 cm, f = +60 cm<br>
+                                Using lens formula: 1/f = 1/v - 1/u<br>
+                                1/60 = 1/v - 1/(-40)<br>
+                                1/60 = 1/v + 1/40<br>
+                                1/v = 1/60 - 1/40 = (2 - 3)/120 = -1/120<br>
+                                v = -120 cm
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Step 4: Calculate Magnification</strong>
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                m = v/u = (-120)/(-40) = +3
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-100 rounded p-3">
+                            <strong class="text-green-800">Final Results:</strong><br>
+                            • Total Power: +1.67 D<br>
+                            • Image Position: 120 cm on same side as object<br>
+                            • Nature: Virtual, erect, magnified 3 times
+                        </div>
+                        
+                        <div class="bg-blue-100 rounded p-3">
+                            <strong class="text-blue-800">Key Insight:</strong> Even though we have both convex and concave lenses, the system acts as a converging lens because the convex lens has stronger power.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question-card rounded-xl p-6 shadow-lg">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-2xl text-purple-500 mr-3"></i>
+                        <h2 class="text-xl font-bold text-gray-800">Question 3: Design Thinking</h2>
+                    </div>
+                    <div class="hots-badge rounded-full px-3 py-1 text-sm font-bold">Advanced</div>
+                </div>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-4">
+                    <p class="text-gray-800 font-medium">
+                        Design an optical system using lenses that can project a sharp, magnified image of a small object (2 mm) onto a screen 2 meters away. The final image should be 20 cm high and inverted. Specify the type, position, and focal length of lenses required. Also explain the working principle.
+                    </p>
+                </div>
+                
+                <div class="answer-box rounded-lg p-4">
+                    <h3 class="font-bold text-purple-800 mb-3">Answer:</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <strong class="text-purple-700">Requirements Analysis:</strong>
+                            <ul class="list-disc ml-6 mt-2 space-y-1">
+                                <li>Object height: 2 mm = 0.2 cm</li>
+                                <li>Image height: 20 cm</li>
+                                <li>Required magnification: m = -20/0.2 = -100 (negative for inverted)</li>
+                                <li>Image distance from lens: 2 m = 200 cm</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Lens Selection and Calculation:</strong>
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                Using m = v/u: -100 = -200/u<br>
+                                Therefore: u = 2 cm (object distance)<br><br>
+                                
+                                Using lens formula: 1/f = 1/v - 1/u<br>
+                                1/f = 1/200 - 1/2 = (1 - 100)/200 = -99/200<br>
+                                f = -200/99 = -2.02 cm<br><br>
+                                
+                                <span class="text-red-600">Problem: Negative focal length suggests concave lens, but we need real image!</span>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Solution: Two-Lens System</strong>
+                            <p class="mt-2">Use a two-lens system:</p>
+                            <ol class="list-decimal ml-6 mt-2 space-y-2">
+                                <li><strong>First Lens (Convex):</strong> f₁ = 2.1 cm, placed at 2.2 cm from object</li>
+                                <li>This creates intermediate image at 46.2 cm</li>
+                                <li><strong>Second Lens (Convex):</strong> f₂ = 50 cm, placed to project final image at 200 cm</li>
+                            </ol>
+                        </div>
+                        
+                        <div class="bg-yellow-100 rounded p-3">
+                            <strong class="text-yellow-800">Working Principle:</strong><br>
+                            • First lens creates magnified intermediate image<br>
+                            • Second lens further magnifies and projects onto screen<br>
+                            • Total magnification = m₁ × m₂ = (-21) × (-4.76) ≈ +100<br>
+                            • Final image is real, inverted, and 20 cm high
+                        </div>
+                        
+                        <div class="bg-green-100 rounded p-3">
+                            <strong class="text-green-800">Design Specifications:</strong><br>
+                            • Lens 1: Convex, f = 2.1 cm, placed 2.2 cm from object<br>
+                            • Lens 2: Convex, f = 50 cm, placed 50 cm from Lens 1<br>
+                            • Screen: 200 cm from Lens 2<br>
+                            • Total system length: ~252 cm
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question-card rounded-xl p-6 shadow-lg">
+                <div class="flex items-start justify-between mb-4">
+                    <div class="flex items-center">
+                        <i class="fas fa-brain text-2xl text-purple-500 mr-3"></i>
+                        <h2 class="text-xl font-bold text-gray-800">Question 4: Analytical Reasoning</h2>
+                    </div>
+                    <div class="hots-badge rounded-full px-3 py-1 text-sm font-bold">Advanced</div>
+                </div>
+                
+                <div class="bg-purple-50 border border-purple-200 rounded-lg p-4 mb-4">
+                    <p class="text-gray-800 font-medium">
+                        A beam of white light passes through a glass prism and gets dispersed into seven colors. If we replace the glass prism with a hollow prism filled with water, how will the dispersion pattern change? Explain the physics behind your answer. Also, calculate the angle of deviation for red and violet light if μ_red = 1.331 and μ_violet = 1.343 for water.
+                    </p>
+                </div>
+                
+                <div class="answer-box rounded-lg p-4">
+                    <h3 class="font-bold text-purple-800 mb-3">Answer:</h3>
+                    <div class="space-y-3">
+                        <div>
+                            <strong class="text-purple-700">Comparison of Dispersion:</strong>
+                            <table class="w-full bg-white rounded p-3 mt-2 text-sm">
+                                <tr class="bg-gray-100">
+                                    <th class="p-2 text-left">Property</th>
+                                    <th class="p-2 text-left">Glass Prism</th>
+                                    <th class="p-2 text-left">Water Prism</th>
+                                </tr>
+                                <tr>
+                                    <td class="p-2">Refractive Index Range</td>
+                                    <td class="p-2">1.5 - 1.7</td>
+                                    <td class="p-2">1.331 - 1.343</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="p-2">Dispersion Amount</td>
+                                    <td class="p-2">High</td>
+                                    <td class="p-2">Lower</td>
+                                </tr>
+                                <tr>
+                                    <td class="p-2">Angle of Deviation</td>
+                                    <td class="p-2">Larger</td>
+                                    <td class="p-2">Smaller</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Physics Explanation:</strong>
+                            <ul class="list-disc ml-6 mt-2 space-y-1">
+                                <li>Dispersion depends on difference in refractive indices for different colors</li>
+                                <li>Glass has higher refractive index and greater variation between colors</li>
+                                <li>Water has lower refractive index and smaller variation</li>
+                                <li>Therefore, water prism shows less dispersion than glass prism</li>
+                                <li>The spectrum will be more compressed with water prism</li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <strong class="text-purple-700">Calculation of Angle of Deviation:</strong>
+                            <p class="mt-2">Assuming prism angle A = 60° and angle of incidence i = 45°:</p>
+                            
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                <strong>For Red Light (μ = 1.331):</strong><br>
+                                Using Snell's law at first surface: sin r₁ = sin i/μ = sin 45°/1.331<br>
+                                sin r₁ = 0.707/1.331 = 0.531<br>
+                                r₁ = 32.1°<br><br>
+                                
+                                At second surface: r₂ = A - r₁ = 60° - 32.1° = 27.9°<br>
+                                sin e = μ × sin r₂ = 1.331 × sin 27.9° = 1.331 × 0.467 = 0.622<br>
+                                e = 38.4°<br><br>
+                                
+                                Angle of deviation: δ = i + e - A = 45° + 38.4° - 60° = 23.4°
+                            </div>
+                            
+                            <div class="bg-white rounded p-3 mt-2 font-mono text-sm">
+                                <strong>For Violet Light (μ = 1.343):</strong><br>
+                                sin r₁ = sin 45°/1.343 = 0.707/1.343 = 0.526<br>
+                                r₁ = 31.8°<br><br>
+                                
+                                r₂ = 60° - 31.8° = 28.2°<br>
+                                sin e = 1.343 × sin 28.2° = 1.343 × 0.472 = 0.634<br>
+                                e = 39.3°<br><br>
+                                
+                                δ = 45° + 39.3° - 60° = 24.3°
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-100 rounded p-3">
+                            <strong class="text-green-800">Results:</strong><br>
+                            • Red light deviation: 23.4°<br>
+                            • Violet light deviation: 24.3°<br>
+                            • Angular dispersion: 0.9°<br>
+                            • This is much smaller than glass prism dispersion (~2-3°)
+                        </div>
+                        
+                        <div class="bg-blue-100 rounded p-3">
+                            <strong class="text-blue-800">Conclusion:</strong> Water prism produces less dispersion than glass prism due to smaller variation in refractive index with wavelength.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- HOTS Tips -->
+        <div class="mt-8 text-center">
+            <div class="bg-white rounded-lg p-6 shadow-lg">
+                <div class="flex items-center justify-center mb-3">
+                    <i class="fas fa-lightbulb text-2xl text-purple-500 mr-3"></i>
+                    <h3 class="text-xl font-bold text-gray-800">HOTS Success Tips</h3>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+                    <div class="bg-purple-50 rounded p-3">
+                        <strong>Think Beyond:</strong> Don't just apply formulas, understand the physics
+                    </div>
+                    <div class="bg-indigo-50 rounded p-3">
+                        <strong>Multiple Concepts:</strong> Combine different topics for solutions
+                    </div>
+                    <div class="bg-blue-50 rounded p-3">
+                        <strong>Real Applications:</strong> Connect theory to practical situations
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+            e.preventDefault();
+        }
+    });
+</script>
+</body>
+</html>
